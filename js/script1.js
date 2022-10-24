@@ -1,21 +1,62 @@
-class Produto {
+class Camiseta {
+
     constructor() {
-        this.id = 0;
-        this.nomeProduto = '';
-        this.valor = 0;
+        this.id = 1;
+
 
     }
 
-    adicionar(){
-        alert('Vamos adicionar um produto!');
+    salvar(){
+        this.lerDados()
         // ...
     }
 
-    excluir() {
+    lerDados(){
+        let camiseta = {}
+
+        camiseta.nomeCammiseta = document.getElementById('camiseta').value;
+        camiseta.Preco = document.getElementById('preco').value;
+
+        return camiseta;
+
+    }
+
+    cancelar() {
         
         // ...
-        alert('item deletado')
+        alert('item cancelado')
     }
 }
 
-var produto = new Produto();
+var produto = new Camiseta();
+
+class Caneca {
+    constructor() {
+        this.id = 1;
+        
+
+    }
+
+    salvar(){
+        this.lerDados()
+        // ...
+    }
+
+    lerDados(){
+        let camiseta = {}
+
+        camiseta.nomeCammiseta = document.getElementById('camiseta').value;
+        camiseta.Preco = document.getElementById('preco').value;
+
+        return camiseta;
+
+    }
+
+    cancelar() {
+        
+        // ...
+        alert('item cancelado')
+    }
+}
+
+var produto = new Caneca();

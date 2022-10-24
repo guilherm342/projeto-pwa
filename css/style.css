@@ -27,6 +27,16 @@ main{
     border-radius: 5px;
 
 }
+.card2 {
+    font-size: 24px;
+    background-color: darkred;
+    border: 10px solid rgb(97, 0, 0);
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    
+
+}
 
 .lineinput {
     display: grid;
@@ -70,7 +80,13 @@ table {
 }
 
 table th {
-    background-color: rgb(97, 0, 0);
+    background-color: rgb(136, 1, 1);
+    
+}
+
+table td {
+    padding: 1px 5px;
+    text-align: left;
 }
 
 table td img {

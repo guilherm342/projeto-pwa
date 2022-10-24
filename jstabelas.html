@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
 
     <script src="js/script1.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -23,17 +24,47 @@
     </div>
         <div class="card">
             <div class="lineinput">
-                <label>Produto</label>
-                <input type="text" id='produto' placeholder="Nome do produto">
+                <label>Camiseta</label>
+                <input type="text" id='Camiseta' placeholder="Adicione a banda da Camiseta">
             <div class="lineinput">
-                    <label>Valor</label>
-                    <input type="text" id='valor' placeholder="Valor do produto">
+                    <label>Preço</label>
+                    <input type="text" id='Preço' placeholder="Valor da camiseta">
            </div>
+          
+           </div> 
+            <button onclick="Camiseta.salvar()"> Salvar </button>
+            <button onclick="Camiseta.cancelar()"> Deletar </button>
+        </div>
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+        <br>
 
+
+        <div>
+            <div class="card2">
+                <div class="lineinput">
+                    <label>Caneca</label>
+                    <input type="text" id='Caneca' placeholder="Adicione a banda da caneca">
+                <div class="lineinput">
+                        <label>Valor</label>
+                        <input type="text" id='valor' placeholder="Valor da caneca">
+             </div>
         </div>
-            <button onclick="Produto.adicionar()"> Adicionar </button>
-            <button onclick="Produto.ecluir()"> Deletar </button>
-        </div>
+         
+    <button onclick="Caneca.salvar()"> Salvar </button>
+    <button onclick="Caneca.cancelar()"> Deletar </button>
+    </div>
 
         <div class="content">
             <table border="1">
@@ -43,17 +74,8 @@
                     <th>Valor</th>
                     <th class="center">Ações</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="center">1</td>
-                        <td>Camiseta Sodom</td>
-                        <td>55</td>
-                        <td class="center" >
-                            <img src="img/edit.png" alt="">
-                            <img src="img/delete.png" alt="">
-                            
-                        </td>
-                    </tr>
+                <tbody id="tbody">
+                    
                 </tbody>
             </table>
         </div>
